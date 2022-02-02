@@ -15,6 +15,6 @@ You need to run the spiders in a virtual enviorment.
   
 Create a virtual env: `python3 -m venv venv`  
 Activate your env: `venv/scripts/activate`  
-Install Scrapy with pip: `pip install scrapy` 
-Go to the crawling directory: `cd .\projectname\` (I didn't realize I could change the project name at the time I created it)
+Install Scrapy with pip: `pip install scrapy`   
+Go to the crawling directory: `cd .\projectname\` (I didn't realize I could change the project name at the time I created it)  
 Start your crawler: `scrapy crawl [name of spider]`. For example: `scrapy crawl sip`
