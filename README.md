@@ -2,7 +2,7 @@
 Maria Shapiro CS 4675
 
 
-There are 4 different crawlers with various rules available to use. All crawlers follow the same stop protocal: stop recusing at 1,200 pages (usually finish queue at ~1,600 pages) or run out of pages to crawl. All spiders abide by Robots.txt. 
+There are 4 different crawlers with various rules available to use. All crawlers follow the same stop protocal: stop recursing at 1,200 pages (usually finishes the queue at ~1,600 pages) or run out of pages to crawl. All spiders abide by Robots.txt. 
 
 1. No rules, no keywords, start at 'https://www.gatech.edu'. This spider's name is **sip**
 2. Only add links that contain the keyword "gatech" to the queue. This spider's name is **gatech**
