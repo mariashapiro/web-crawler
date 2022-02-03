@@ -7,6 +7,7 @@ from scrapy.linkextractors import LinkExtractor
 # CS 4675
 
 # Homework 1: Option 1.2 Write a Web Crawler of your own
+# First spider!
 
 """
 References:
@@ -32,8 +33,6 @@ to be crawled, etc.) in excel plots or tabular format
 (e) Discuss your experience and lessons learned.
 """
 
-
-
 class SipSpider(CrawlSpider):
     name = 'sip'
     #allowed_domains = ['cc.gatech.edu']
@@ -44,14 +43,11 @@ class SipSpider(CrawlSpider):
     
     rules = (
       #Rule(LinkExtractor(allow='a'), callback='parse', follow=True),
-      #Rule(LinkExtractor(allow='a')),
-      [Rule(LinkExtractor(allow='gatech', deny='http://iamweb1.iam.gatech.edu'))]
+      Rule(LinkExtractor(), follow=True),
+      #[Rule(LinkExtractor(allow='gatech', deny='http://iamweb1.iam.gatech.edu'))]
       #Rule(LinkExtractor(deny='http://iamweb1.iam.gatech.edu'))
 
     )
-
-    
-    
 
     #Rule(LinkExtractor(allow="a"), callback='parse', follow=True),
     #Rule(LinkExtractor(allow='b'))
@@ -75,10 +71,7 @@ class SipSpider(CrawlSpider):
           #'body': ''.join(sel.select("//body//text()").extract()).strip()
           
           'body': website_text,
-          'word count': common_words
-
-          
-
+          #'word count': common_words
         }
 
     

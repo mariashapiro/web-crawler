@@ -7,7 +7,7 @@ There are 4 different crawlers with various rules available to use. All crawlers
 1. No rules, no keywords, start at 'https://www.gatech.edu'. This spider's name is **sip**
 2. Only add links that contain the keyword "gatech" to the queue. This spider's name is **gatech**
 3. Only add links that contain the keywords "gatech" and "computing". This spider's name is **computing**
-4. Only add links that contain the keywords "gatech", "computing", "AI", "ML", and "research". This spider's name is **research**
+4. Only add links that contain the keywords "AI", "ML", and "research". This spider's name is **research**
 
 
 <h2>How to run</h2>  
