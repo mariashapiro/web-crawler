@@ -13,7 +13,7 @@ There are 4 different crawlers with various rules available to use. All crawlers
 <h2>How to run</h2>  
 You need to run the spiders in a virtual enviorment. 
   
-Create a virtual env: `python3 -m venv venv`  
+Create a virtual env: `python -m venv venv`  
 Activate your env: `venv/scripts/activate`  
 Install Scrapy with pip: `pip install scrapy`   
 Go to the crawling directory: `cd .\projectname\` (I didn't realize I could change the project name at the time I created it)  
